@@ -21,7 +21,11 @@ class Terorist
 }
 class Creator
 {
-   
+   public void Produce_alone(List<Terorist> list_terorist,string name, int rank, bool status, string weapon)
+    {
+        Terorist a = new Terorist(name,rank,status,weapon);
+        list_terorist.Add(a);
+    }
     private void creator(List<Terorist> list_terorist)
     {
         List<string> names = new List<string>() {"Ahmed", "Fatima", "Omar", "Layla", "Hassan", "Nour", "Ali", "Aisha", "Khalid", "Zainab"};
