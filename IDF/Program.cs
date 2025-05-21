@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDF
 {
-    internal class Program
+    internal class program
     {
         static void Main(string[] args)
         {
