@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Security.AccessControl;
 
 // תבנית כללית ליצירת נשק 
-public class AttackTool
+public abstract class AttackTool
 {
     
     Dictionary<int, string> effective = new Dictionary<int, string> { { 1, "Effective To Bulding" }, { 2, "Effective To Open Area" }, { 3, "Effective To Tunnel" } };
@@ -12,15 +12,15 @@ public class AttackTool
 
 
     // יצירת הפקודות geter ו seter
-    string insertNameGun { get; set; }
-    public int SelectedEfective { get; set; }
-    public string SelectedTypeBomb { get; set; }
-    public int SelectedActiveBy { get; set; }
-    public int AmountOfAmmunation { get; set; }
+    protected string insertNameGun { get; set; }
+    protected int SelectedEfective { get; set; }
+    protected string SelectedTypeBomb { get; set; }
+    protected int SelectedActiveBy { get; set; }
+    protected int AmountOfAmmunation { get; set; }
 
 
     // קונסטרקטור
-    public AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
+    protected AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
     {
         insertNameGun = nameKey;
         SelectedEfective = effectiveKey;

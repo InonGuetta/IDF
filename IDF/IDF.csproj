@@ -47,6 +47,7 @@
     <Compile Include="CodeFile2.cs" />
     <Compile Include="AttackTool.cs" />
     <Compile Include="CreateAttackTool.cs" />
+    <Compile Include="Idf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
