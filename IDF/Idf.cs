@@ -7,7 +7,7 @@ public class Idf
     private string chiefCommander = "Eyal Zamir";
 
 
-
+    // 
     List<AttackTool> attackTools = new List<AttackTool>();
     public void addTool(AttackTool tools)
     {
