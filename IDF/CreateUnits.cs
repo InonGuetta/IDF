@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-//public class CreateUnits : EffectiveData
+﻿//public class CreateUnits : EffectiveData
 //{
 //    string NameUnit;
 //    int Gas = 100;
@@ -21,7 +19,3 @@
 
     //    if(){
     //    }
-}
-  
-
-}
