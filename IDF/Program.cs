@@ -10,6 +10,12 @@ namespace IDF
     {
         static void Main(string[] args)
         {
+            Artillery artliery = new Artillery();
+            Idf idf = new Idf();
+            idf.addTool(artliery);
+            
+
+
 
         }
     }

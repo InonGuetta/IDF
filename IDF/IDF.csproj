@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeFile1.cs" />
-    <Compile Include="CodeFile2.cs" />
+    <Compile Include="Drone.cs" />
+    <Compile Include="Artillery.cs" />
     <Compile Include="AttackTool.cs" />
+    <Compile Include="FighterJet.cs" />
     <Compile Include="CreateAttackTool.cs" />
     <Compile Include="Idf.cs" />
     <Compile Include="Program.cs" />
