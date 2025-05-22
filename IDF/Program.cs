@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IDF
+﻿namespace IDF
 {
-    internal class program
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace IDF
     {
-        static void Main(string[] args)
+
+        internal class program
         {
+
             Artillery artliery = new Artillery();
             Idf idf = new Idf();
             CreateAttackTolls new_tool_01 = new CreateAttackTolls("s-400",1,"50 - kg",1,2);
@@ -18,8 +20,15 @@ namespace IDF
             idf.addTool(artliery);
             
 
+            static void Main(string[] args)
+            {
+                Artillery artliery = new Artillery();
+                Idf idf = new Idf();
+                idf.addTool(artliery);
+            }
 
 
         }
     }
 }
+
