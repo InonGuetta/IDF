@@ -6,7 +6,7 @@ public class CreateAttackTolls : AttackTool
     public CreateAttackTolls(string nameKey, int effectiveKey, string bombKey, int activeKey, int ammo)
         : base (nameKey, effectiveKey, bombKey, activeKey, ammo)
     {
-
+        // פה יש עוד ערכים שניתן להוסיף לקונסטרקטור של הבן
 
     }
 

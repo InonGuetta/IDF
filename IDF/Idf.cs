@@ -8,6 +8,13 @@ using System.Collections.Generic;
 
 
 
+    // 
+    List<AttackTool> attackTools = new List<AttackTool>();
+    public void addTool(AttackTool tools)
+    {
+        attackTools.Add(tools);
+
+
         List<AttackTool> attackTools = new List<AttackTool>();
         public void addTool(AttackTool tools)
         {

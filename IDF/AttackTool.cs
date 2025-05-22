@@ -2,31 +2,41 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Security.AccessControl;
+using System.Threading;
+// אולי צריך לעשות פה מחלקת utility 
+// 
 
-// תבנית כללית ליצירת נשק 
-public abstract class AttackTool
+public abstract class AttackTool 
 {
-    
+    // איך אני עושה שמחלקה אחרת תירש רק את השורה היחידה הזאת שמלמטה
     Dictionary<int, string> effective = new Dictionary<int, string> { { 1, "Effective To Bulding" }, { 2, "Effective To Open Area" }, { 3, "Effective To Tunnel" } };
     Dictionary<int, string> active_by = new Dictionary<int, string> { { 1, "Active By Auto" }, { 2, " Active By Human" } };
 
+    public string InsertNameGun { get; }
 
     // יצירת הפקודות geter ו seter
-    protected string insertNameGun { get; set; }
-    protected int SelectedEfective { get; set; }
-    protected string SelectedTypeBomb { get; set; }
-    protected int SelectedActiveBy { get; set; }
-    protected int AmountOfAmmunation { get; set; }
+    public int SelectedEfective { get; set; }
+    public string SelectedTypeBomb { get; set; }
+    public int SelectedActiveBy { get; set; }
+    public int AmountOfAmmunation { get; set; }
 
 
-    // קונסטרקטור
-    protected AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
+
+
+    // למה אני צריך את הדברים הללן 
+    //nameKey;
+    //effectiveKey;
+    //bombKey;
+    //activeKey;
+    //ammo;
+
+    public AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
     {
-        insertNameGun = nameKey;
-        SelectedEfective = effectiveKey;
-        SelectedTypeBomb = bombKey;
-        SelectedActiveBy = activeKey;
-        AmountOfAmmunation = ammo;
-
-    }
+        this.InsertNameGun =    nameKey;
+        this.SelectedEfective = effectiveKey;
+        this.SelectedTypeBomb = bombKey;
+        this.SelectedActiveBy = activeKey;
+        this.AmountOfAmmunation = ammo;
+        
+          }
 }
