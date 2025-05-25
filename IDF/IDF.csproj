@@ -43,18 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFile1.cs" />
+    <Compile Include="Aman.cs" />
+    <Compile Include="Attack manager.cs" />
+    <Compile Include="attack.cs" />
+    <Compile Include="CreateNewTool.cs" />
+    <Compile Include="ManageTools.cs" />
     <Compile Include="Drone.cs" />
     <Compile Include="Artillery.cs" />
     <Compile Include="AttackTool.cs" />
     <Compile Include="FighterJet.cs" />
     <Compile Include="CreateAttackTool.cs" />
+    <Compile Include="Hamas.cs" />
     <Compile Include="Idf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="Terorist.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

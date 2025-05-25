@@ -1,24 +1,17 @@
 ﻿using System.Collections.Generic;
-public class Aman : Hamas
+
+public class msg
+    
 {
-    Terorist name =;
-    string time;
-    string place;
-    List<string> list_message = new List<string>();
-    public Aman()
+    public void msgList(string input_msg)
     {
-        //this.name = name;
-        this.time = time;
-        this.place = place;
-        message();
+        List<string> msg_list = new List<string>();
+        
     }
-   
-    public void message() 
-        {
-        string msg = $"Report that {name} was in {place} at {time}";
-        list_message.Add(msg);
-        }  
-    }
+}
+
+
+
 
 
 

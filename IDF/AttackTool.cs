@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Security.AccessControl;
 
-// תבנית כללית ליצירת נשק 
+// תבנית כללית ליצירת נשק
+// abstract
 public abstract class AttackTool
 {
     
@@ -12,17 +13,17 @@ public abstract class AttackTool
 
 
     // יצירת הפקודות geter ו seter
-    protected string insertNameGun { get; set; }
-    protected int SelectedEfective { get; set; }
-    protected string SelectedTypeBomb { get; set; }
-    protected int SelectedActiveBy { get; set; }
-    protected int AmountOfAmmunation { get; set; }
+    public string InsertNameGun { get; }
+    public int SelectedEfective { get; set;}
+    public string SelectedTypeBomb { get; set;}
+    public int SelectedActiveBy { get; set;}
+    public int AmountOfAmmunation { get; set;}
 
 
     // קונסטרקטור
-    protected AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
+    public AttackTool(string nameKey, int effectiveKey,string bombKey, int activeKey, int ammo )
     {
-        insertNameGun = nameKey;
+        InsertNameGun = nameKey;
         SelectedEfective = effectiveKey;
         SelectedTypeBomb = bombKey;
         SelectedActiveBy = activeKey;
