@@ -43,13 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFile1.cs" />
+    <Compile Include="AssaultUnits.cs" />
+    <Compile Include="CreateNewTool.cs" />
+    <Compile Include="CreateUnits.cs" />
     <Compile Include="Drone.cs" />
     <Compile Include="Artillery.cs" />
     <Compile Include="AttackTool.cs" />
     <Compile Include="FighterJet.cs" />
     <Compile Include="CreateAttackTool.cs" />
     <Compile Include="Idf.cs" />
+    <Compile Include="ManageTools.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
