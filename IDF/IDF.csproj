@@ -46,6 +46,7 @@
     <Compile Include="Aman.cs" />
     <Compile Include="Attack manager.cs" />
     <Compile Include="attack.cs" />
+    <Compile Include="commander.cs" />
     <Compile Include="CreateNewTool.cs" />
     <Compile Include="ManageTools.cs" />
     <Compile Include="Drone.cs" />

@@ -25,7 +25,7 @@ class Program
         ManageTools.drons.Add(drone01);
         Artillery artillery01 = new Artillery(30);
         ManageTools.artilleries.Add(artillery01);
-
+        
         Idf idf = new Idf();
         msg aman_msg = new msg();
         Hamas hamas = new Hamas();
@@ -43,26 +43,7 @@ class Program
             a.Produce_alone(hamas);
            
         }
-        bool commander = true;
-        //hamas.print();
-        while (commander)
-        {
-            Console.WriteLine("CHOOSE A TERORIST 0-4");
-            int number = int.Parse(Console.ReadLine());
-            if (hamas.list_terorist[number].status==true)
-            {
-                Console.WriteLine("CHOOSE A TOOL 0 -  3");
-                int number_weppon= int.Parse(Console.ReadLine());
-                //if (wamen == true)
-                //{
-                //    hamas.list_terorist[number].status = false;
-                //    //כמות נשק תירד באחד
-                //    aman_msg.msgList($"the terorist{hamas.list_terorist[number]}Dead by{}");
-                //}
-            }
-
-            
-        }
+        
 
     }
     
