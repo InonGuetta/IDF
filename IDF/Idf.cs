@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Net;
 
-public class Idf
-{
-    private DateTime sinceIdf = new DateTime(1948, 5, 26);
-    private string chiefCommander = "Eyal Zamir";
+    public class Idf
+    {
+        private DateTime sinceIdf = new DateTime(1948, 5, 26);
+        private string chiefCommander = "Eyal Zamir";
+
 
     Dictionary<string, List<AttackTool>> attackTools = new Dictionary<string, List<AttackTool>> {
         {"drons", ManageTools.drons },
@@ -21,6 +22,16 @@ public class Idf
     public void addTool(AttackTool tools)
     {
         
+        attackTools.Add(tools);
+
+
+        List<AttackTool> attackTools = new List<AttackTool>();
+        public void addTool(AttackTool tools)
+        {
+            attackTools.Add(tools);
+        }
+
     }
 
-}
+
+
